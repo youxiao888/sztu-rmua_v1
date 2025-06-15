@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="rmua" type="control.py" name="cxr_egoctrl_v1" output="screen">
+    </node>
+</launch>

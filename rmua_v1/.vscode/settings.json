@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "core": "cpp",
+        "specialfunctions": "cpp",
+        "eigen": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/amov/rmua_v1/src/uav_simulator/map_generator"
+}

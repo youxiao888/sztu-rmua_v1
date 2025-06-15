@@ -1,0 +1,83 @@
+point0:
+  label: "circle"
+  xyz: [2, -0.05, 1.75]
+
+point1:
+  label: "circle"
+  xyz: [6, 0.3, 1.75]
+
+point2:
+  label: "waypoint"
+  xyz: [13, 0.2, 4]
+  yaw: 0.0
+
+point3:
+  label: "circle"
+  xyz: [15.57, 0.2, 4.2]
+
+point4:
+  label: "waypoint"
+  xyz: [21, 0.0, 3.8]
+  yaw: 1.57
+
+point5:
+  label: "special_circle"
+  xyz: [21.0, 2.0, 4.0]
+  length: 1.4
+
+point6:
+  label: "waypoint"
+  xyz: [21.0, 5.5, 4.0]
+  yaw: 3.14
+
+point7:
+  label: "circle"
+  xyz: [16.1, 5.5, 4.0]
+
+point8:
+  label: "waypoint"
+  xyz: [7, 6.5, 2.1]
+  yaw: -1.57
+
+point9:
+  label: "square"
+  xyz: [8.3,2.0,1.6]
+  length: 1.40
+
+point10:
+  label: "waypoint"
+  xyz: [15.5, -0.3, 1.5]
+  yaw: 0.0
+
+point11:
+  label: "circle"
+  xyz: [19.8, -0.2, 1.6]
+
+point12:
+  label: "waypoint"
+  xyz: [23.5, -0.2, 1.6]
+  yaw: 0.0
+
+point13:
+  label: "waypoint"
+  xyz: [22.5, 5.0, 2.0]
+  yaw: 3.14
+
+point14:
+  label: "circle"
+  xyz: [19, 5.4, 1.6]
+
+point15:
+  label: "waypoint"
+  xyz: [13.0, 5.0, 2.2]
+  yaw: 3.14
+  
+point16:
+  label: "waypoint"
+  xyz: [1.0, 4.0, 2.5]
+  yaw: 3.14
+  
+point17:
+  label: "Land"
+  xyz: [1.0, 4.0, 2.5]
+  yaw: 0.0

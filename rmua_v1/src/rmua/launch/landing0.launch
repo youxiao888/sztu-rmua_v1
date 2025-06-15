@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="rmua" type="landing1.py" name="dynamic_landing" output="screen">
+	 <!-- 话题映射 -->
+        <remap from="/camera/landing/image_raw" to="/usb_cam/image_raw"/>    
+        <!-- 下视相机内参 -->
+        <param name="landing_cx" type="double" value="359.185405"/>
+        <param name="landing_cy" type="double" value="227.504912"/>
+        <param name="landing_fx" type="double" value="722.971756"/>
+        <param name="landing_fy" type="double" value="719.232044"/>
+
+    </node>
+</launch>

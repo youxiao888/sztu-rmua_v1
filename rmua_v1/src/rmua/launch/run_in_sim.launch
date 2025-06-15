@@ -1,0 +1,47 @@
+<launch>
+    <node pkg="rmua" type="raw_image_reading.py" name="yolov5_node" output="screen">
+    
+        <!-- YOLO 模型参数 -->
+        <param name="model_path" type="str" value="/home/amov/Downloads/yolo11n-lamp-10.0x-finetune.pt"/>
+        
+        <!-- 相机内参 -->
+        <param name="cx" type="double" value="643.669443"/>
+        <param name="cy" type="double" value="369.176868"/>
+        <param name="fx" type="double" value="927.345418"/>
+        <param name="fy" type="double" value="922.006773"/>
+        
+        <!-- 下视相机内参 -->
+        <param name="landing_cx" type="double" value="654.9307250976562"/>
+        <param name="landing_cy" type="double" value="365.23223876953125"/>
+        <param name="landing_fx" type="double" value="365.23223876953125"/>
+        <param name="landing_fy" type="double" value="365.23223876953125"/>
+        
+        <!-- 深度数据离散采样间隔(单位：度) -->
+        <param name="sample_interval" type="int" value="5"/>
+        
+        <!-- 四分位距优化法K值 -->
+        <param name="k" type="double" value="1.0"/>
+        
+        <!-- 边长迭代最大次数 -->
+        <param name="max_iterations" type="int" value="4"/>
+        
+        <!-- 相邻两帧图像深度差阈值 -->
+        <param name="depth_diff_threshold" type="double" value="0.1"/>
+        
+        <!-- 采样线段两端深度差阈值 -->
+        <param name="depth_ends_diff_threshold" type="double" value="0.25"/>
+        
+        <!-- 允许的不合格样本线段占总样本的比例 -->
+        <param name="max_bad_lines_ratio" type="double" value="0.50"/>
+        
+        <!-- 检测框的长宽的比例阈值 -->
+        <param name="aspect_ratio_min" type="double" value="0.90"/>
+        <param name="aspect_ratio_max" type="double" value="1.10"/>
+        
+        <!-- 降落文件路径 -->
+        <param name="landing_launch_file" type="str" value="/home/amov/rmua_v1/src/rmua/launch/landing0.launch"/>
+        
+    	<rosparam command="load" file="$(find rmua)/cfg/waypoint.yaml"/>
+    </node>
+</launch>
+
